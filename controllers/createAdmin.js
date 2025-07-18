@@ -5,7 +5,7 @@ import { hashPassword } from '../utils/passwordUtils.js';
 (async () => {
     try {
         // Connect to MongoDB
-        await mongoose.connect('mongodb+srv://nikitasakhare432:AbXT0t7rsCbGZ229@cluster0.t6o0o.mongodb.net/', {
+        await mongoose.connect('process.env.MONGO_URL', {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         });
